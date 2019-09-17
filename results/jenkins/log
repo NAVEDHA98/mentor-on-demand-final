@@ -1,0 +1,134 @@
+Started by user [8mha:////4FmHlSO0UR+QH+lu8SY4/B+ZoWLDGc04BX5BcnZfodc2AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/NAVEDHA98/mentor
+ > git.exe init C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand # timeout=10
+Fetching upstream changes from https://github.com/NAVEDHA98/mentor
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/NAVEDHA98/mentor +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/NAVEDHA98/mentor # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/NAVEDHA98/mentor # timeout=10
+Fetching upstream changes from https://github.com/NAVEDHA98/mentor
+ > git.exe fetch --tags --progress https://github.com/NAVEDHA98/mentor +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 7cbeadeafa7a5e85e9a8a303861a5577c7f3404b (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 7cbeadeafa7a5e85e9a8a303861a5577c7f3404b
+Commit message: "Delete README.md"
+ > git.exe rev-list --no-walk 7cbeadeafa7a5e85e9a8a303861a5577c7f3404b # timeout=10
+[mentor-on-demand] $ cmd.exe /C "mvn clean package && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< com.mod:menter >---------------------------
+[INFO] Building menter 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ menter ---
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ menter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ menter ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand\target\classes
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ menter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand\src\test\resources
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ menter ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand\target\test-classes
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ menter ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mod.menter.MenterApplicationTests
+12:13:49.319 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mod.menter.MenterApplicationTests]
+12:13:49.328 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:13:49.336 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:13:49.368 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mod.menter.MenterApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:13:49.385 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mod.menter.MenterApplicationTests], using SpringBootContextLoader
+12:13:49.391 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mod.menter.MenterApplicationTests]: class path resource [com/mod/menter/MenterApplicationTests-context.xml] does not exist
+12:13:49.392 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mod.menter.MenterApplicationTests]: class path resource [com/mod/menter/MenterApplicationTestsContext.groovy] does not exist
+12:13:49.394 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mod.menter.MenterApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:13:49.395 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mod.menter.MenterApplicationTests]: MenterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:13:49.451 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mod.menter.MenterApplicationTests]
+12:13:49.550 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand\target\classes\com\mod\menter\MenterApplication.class]
+12:13:49.552 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mod.menter.MenterApplication for test class com.mod.menter.MenterApplicationTests
+12:13:49.684 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mod.menter.MenterApplicationTests]: using defaults.
+12:13:49.685 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:13:49.711 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7c7b252e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4d5d943d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@368f2016, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c583ecf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@692f203f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48f2bd5b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b2bbc3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a1153bc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1aafa419, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@47eaca72, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@55141def, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55182842]
+12:13:49.711 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mod.menter.MenterApplicationTests]
+12:13:49.728 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mod.menter.MenterApplicationTests]
+12:13:49.728 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mod.menter.MenterApplicationTests]
+12:13:49.728 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mod.menter.MenterApplicationTests]
+12:13:49.728 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mod.menter.MenterApplicationTests]
+12:13:49.728 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mod.menter.MenterApplicationTests]
+12:13:49.744 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@28701274 testClass = MenterApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@13c9d689 testClass = MenterApplicationTests, locations = '{}', classes = '{class com.mod.menter.MenterApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23fe1d71, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4e718207, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4524411f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2641e737], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+12:13:49.755 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mod.menter.MenterApplicationTests]
+12:13:49.756 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mod.menter.MenterApplicationTests]
+12:13:49.789 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2019-09-13 12:13:50.120  INFO 5612 --- [           main] com.mod.menter.MenterApplicationTests    : Starting MenterApplicationTests on Javafs with PID 5612 (started by JAVAFS$ in C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand)
+2019-09-13 12:13:50.142  INFO 5612 --- [           main] com.mod.menter.MenterApplicationTests    : No active profile set, falling back to default profiles: default
+2019-09-13 12:13:51.223  INFO 5612 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-13 12:13:51.321  INFO 5612 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88ms. Found 7 repository interfaces.
+2019-09-13 12:13:51.834  INFO 5612 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$314f9ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-13 12:13:52.102  INFO 5612 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-13 12:13:52.366  INFO 5612 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-09-13 12:13:52.367  INFO 5612 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-13 12:13:52.592  INFO 5612 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-13 12:13:52.671  INFO 5612 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-13 12:13:52.672  INFO 5612 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-13 12:13:52.846  INFO 5612 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-13 12:13:53.038  INFO 5612 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-13 12:13:53.071  INFO 5612 --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-09-13 12:13:54.014  INFO 5612 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-13 12:13:55.469  INFO 5612 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-13 12:13:55.547  WARN 5612 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-13 12:13:55.921  INFO 5612 --- [           main] com.mod.menter.MenterApplicationTests    : Started MenterApplicationTests in 6.123 seconds (JVM running for 7.106)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.857 s - in com.mod.menter.MenterApplicationTests
+2019-09-13 12:13:56.059  INFO 5612 --- [       Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-13 12:13:56.085  INFO 5612 --- [       Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-13 12:13:56.096  INFO 5612 --- [       Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-13 12:13:56.108  INFO 5612 --- [       Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ menter ---
+[INFO] Building jar: C:\Program Files (x86)\Jenkins\workspace\mentor-on-demand\target\menter-0.0.1-SNAPSHOT.jar
+[INFO] 
+[8mha:////4KIoSArXFmtkkIeJs+1dS8ykYeCuBl4S8HqFpUcNzxpZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.1.7.RELEASE:repackage (repackage) @ menter ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.120 s
+[INFO] Finished at: 2019-09-13T12:13:57+05:30
+[INFO] ------------------------------------------------------------------------
+Recording test results
+Finished: SUCCESS
