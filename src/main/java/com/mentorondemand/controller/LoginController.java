@@ -1,4 +1,5 @@
 package com.mentorondemand.controller;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -21,42 +22,33 @@ import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.mentorondemand.model.Login;
 import com.mentorondemand.repo.LoginRepository;
 
-
-
-
-
 @CrossOrigin(origins = "http://localhost:4321")
 @RestController
 @RequestMapping("/api")
 public class LoginController {
-        
-	
-	@Autowired
-	  LoginRepository loginRepo;
 
-		@PostMapping(value="/getRole/login")
-		public List<Login> getLoginDetails(@RequestBody Login login) {
-			
-		    System.out.println("hiii");
-			String  email=login.getEmail();
-			System.out.println(email);
-			String  password=login.getPassword();
-			List<Login> list = loginRepo.findByRole(email,password);
-		   return list;
-		  
-			
-			
-		}
-		@GetMapping("/getAdminLogin")
-        public List<Login> getAdminLoginDetails() {
-			
-		    System.out.println("admin email");
-			List<Login> list = loginRepo.findByRole("admin");
-		   return list;
-		  
-			
-			
-		}
-	   
-	   
+	@Autowired
+	LoginRepository loginRepo;
+
+	@PostMapping(value = "/getRole/login")
+	public List<Login> getLoginDetails(@RequestBody Login login) {
+
+		System.out.println("hiii");
+		String email = login.getEmail();
+		System.out.println(email);
+		String password = login.getPassword();
+		List<Login> list = loginRepo.findByRole(email, password);
+		return list;
+
+	}
+
+	@GetMapping("/getAdminLogin")
+	public List<Login> getAdminLoginDetails() {
+
+		System.out.println("admin email");
+		List<Login> list = loginRepo.findByRole("admin");
+		return list;
+
+	}
+
 }

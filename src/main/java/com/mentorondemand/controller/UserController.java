@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mentorondemand.model.Login;
-import com.mentorondemand.model.Payments;
 import com.mentorondemand.model.ProposalRequest;
 import com.mentorondemand.model.Skills;
 import com.mentorondemand.model.User;
@@ -37,19 +36,18 @@ public class UserController {
 
 	@Autowired
 	PaymentRepository paymentRepo;
-	
-	@Autowired
-	  LoginRepository loginRepo;
 
+	@Autowired
+	LoginRepository loginRepo;
 
 	@PostMapping(value = "/user/register")
 	public User postCustomer(@RequestBody User user) {
 
 		User userInsert = userRepo.save(new User(user.getUserName(), user.getPassword(), user.getFirstName(),
 				user.getLastName(), user.getGender(), user.getEmail(), user.getContactNumber(), user.getRegcode(),
-				user.getActiveStatus(), user.getAddress(),user.getRole()));
+				user.getActiveStatus(), user.getAddress(), user.getRole()));
 		System.out.println(user.getRegcode());
-		Login loginDetails= loginRepo.save(new Login(user)); 
+		Login loginDetails = loginRepo.save(new Login(user));
 		return userInsert;
 
 	}
@@ -64,12 +62,11 @@ public class UserController {
 	@PostMapping(value = "/user/proposeTraining")
 	public ProposalRequest proposeTraining(@RequestBody ProposalRequest proposalRequest) {
 
-		ProposalRequest proposalRequestInsert = proposalRequestRepo.save(new ProposalRequest(proposalRequest.getUserId(), proposalRequest.getMentorId(),
+		ProposalRequest proposalRequestInsert = proposalRequestRepo
+				.save(new ProposalRequest(proposalRequest.getUserId(), proposalRequest.getMentorId(),
 						proposalRequest.getTechnologyId(), proposalRequest.getStatus()));
 		return proposalRequestInsert;
 
 	}
-
-	
 
 }
